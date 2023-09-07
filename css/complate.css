@@ -329,3 +329,130 @@
         margin-top: 20px;
     }
 }
+
+/* Dagre */
+#dagre {
+    padding: 160px 0 130px;
+    background-image: url("../img/dagre_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .dagre-content {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+        .dagre-pracent {
+            width: 60%;
+        }
+        .dagre-pracent-item {
+            margin-right: 150px;
+        }
+            .dagre-item-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .dagre-item-title h4, 
+                .dagre-item-title span {
+                    font-weight: 400;
+                    font-style: normal;
+                    font-family: 'Poppins', sans-serif;
+                    color: #ffffff;
+                    font-size: 12px;
+                    line-height: 2.7;
+                    letter-spacing: 2px;
+                }
+            .dagre-item-pracent {
+                position: relative;
+            }
+                .dagre-item-pracent span:first-child {
+                    display: block;
+                    background: #5e4fd1;
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 5px;
+                    margin: 5px 0 20px;
+                }
+                .dagre-item-pracent span:last-child {
+                    display: block;
+                    background: #f2c94c;
+                    width: 90%;
+                    height: 5px;
+                    border-radius: 5px;
+                    position: relative;
+                    top: -25px;
+                }
+                .dagre-pracent-item:nth-child(2) .dagre-item-pracent span:last-child {
+                    width: 95%;
+                }
+                .dagre-pracent-item:nth-child(3) .dagre-item-pracent span:last-child {
+                    width: 80%;
+                }
+        .dagre-desc {
+            width: 40%;
+            padding-top: 20px;
+        }
+            .dagre-desc h3 {
+                font-weight: 500;
+                font-style: normal;
+                font-family: 'Poppins', sans-serif;
+                color: #ffffff;
+                font-size: 24px;
+                line-height: 1.4;
+                margin-bottom: 23px;
+            }
+            .dagre-desc h4 {
+                font-weight: 400;
+                font-style: normal;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                line-height: 1.4;
+            }
+            .dagre-desc span {
+                font-weight: 400;
+                font-style: normal;
+                font-family: 'Poppins', sans-serif;
+                color: #9b9ea3;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+/* Dagre media */
+@media only screen and (max-width: 500px) {
+    /* Dagre */
+    #dagre {
+        background-position: center center;
+        padding: 50px 0;
+    }
+        .dagre-content {
+            flex-direction: column;
+        }
+            .dagre-pracent {
+                width: 100%;
+            }
+            .dagre-pracent-item {
+                margin-right: 0px;
+            }
+                .dagre-item-title h4, 
+                .dagre-item-title span {
+                    line-height: 1.8;
+                    letter-spacing: 1px;
+                }
+            .dagre-desc {
+                width: 100%;
+                padding-top: 0px;
+            }
+                .dagre-desc h3 {
+                    font-size: 19px;
+                    margin-bottom: 20px;
+                }
+                .dagre-desc h4 {
+                    font-size: 14px;
+                    line-height: 1.2;
+                }
+                .dagre-desc span {
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+}

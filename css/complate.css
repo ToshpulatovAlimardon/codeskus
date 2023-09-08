@@ -597,3 +597,30 @@
                 margin: 3px auto;
             }
 }
+
+
+/* Form */
+#form {
+    padding: 160px 0 210px;
+    background: #242527;
+    color: #fff;
+}
+.form-content {
+    display: flex;
+    justify-content: space-between;
+}
+    .form-content-sign {
+        width: 70%;
+    }
+        .form-content-sign h2 {
+            font-weight: 500;
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            font-size: 35px;
+            line-height: 1.4;
+            margin-bottom: 50px;
+        }
+    .form-content-desc {
+        width: 30%;
+        margin-left: 100px;
+    }

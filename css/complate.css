@@ -456,3 +456,84 @@
                     line-height: 1.5;
                 }
 }
+
+/* Team */
+#team {
+    padding: 160px 0;
+}
+.team-content {
+    text-align: center;
+}
+    .team-title h2 {
+        font-weight: 500;
+        font-style: normal;
+        font-family: 'Poppins', sans-serif;
+        color: #242527;
+        font-size: 35px;
+        line-height: 1.4;
+        padding: 0 120px;
+    }
+        .team-title h2 span {
+            color: #5e4fd1;
+        }
+    .team-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        .team-group .team-group-item {
+            width: 16.666%;
+            padding: 0 10px;
+        }
+            .team-group-item img {
+                margin: 50px auto 20px;
+                border-radius: 50%;
+            }
+            .team-group-item h3 {
+                font-weight: 500;
+                font-style: normal;
+                font-family: 'Poppins', sans-serif;
+                color: #242527;
+                font-size: 16px;
+                line-height: 1.6;
+                cursor: pointer;
+                transition: all .2s;
+            }
+            .team-group-item h3:hover,
+            .team-group-item h3:focus {
+                color: #5e4fd1;
+            }
+            .team-group-item span {
+                font-weight: 400;
+                font-style: normal;
+                font-family: 'Poppins', sans-serif;
+                color: #9b9ea3;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+/* Team media */
+@media only screen and (max-width: 500px) {
+    #team {
+        padding: 50px 0;
+    }
+        .team-title h2 {
+            font-size: 20px;
+            line-height: 1.2;
+            padding: 0;
+        }
+        .team-group {
+            flex-direction: column;
+        }
+            .team-group .team-group-item {
+                width: 100%;
+            }
+                .team-group-item img {
+                    margin: 20px auto 15px;
+                }
+                .team-group-item span {
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+}
